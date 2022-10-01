@@ -7,6 +7,7 @@
     --bg-dark: #2F303A;
     --bg-secondary: #F5F4FA;
     --text-white: #ffffff;
+    --text-footer: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -82,7 +83,12 @@ body {
 }
 
 .nav {
+    font-weight: 500;
     color: var(--title-text-color);
+}
+
+.contacts-list {
+    font-weight: 500;
 }
 
 .link:hover,
@@ -100,12 +106,24 @@ body {
 .hero-title {
     font-size: 44px;
     font-weight: 900;
-    line-height: 1.36;
+    line-height: 1.4;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
     color: var(--text-white);
 }
 
+.btn-primary {
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+}
+
 /* Benefits */
+
+.benefits-item .title {
+    font-size: inherit;
+    text-transform: uppercase;
+}
 
 .title {
     line-height: 1.16;
@@ -134,12 +152,11 @@ body {
 
 .team-title {
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 .description {
     font-size: 16px;
-    font-weight: 400;
 }
 
 /* Portfolio page */
@@ -166,18 +183,20 @@ body {
     letter-spacing: 0.06em;
 }
 
+.cards-item .description {
+    line-height: 2;
+}
+
 
 /* Footer */
 
 .footer {
+    color: var(--text-footer);
     background-color: var(--bg-dark);
 }
 
 .address {
-    font-size: 14px;
-    font-weight: 400;
     line-height: 1.7;
-    letter-spacing: 0.03em;
     font-style: normal;
 }
 
